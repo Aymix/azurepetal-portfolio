@@ -1,0 +1,63 @@
+
+/* URL IMPORTS (SUCH AS FONT IMPORTS) SHOULD BE KEPT ABOVE TAILWIND IMPORTS - DO NOT DELETE THIS COMMENT */
+
+/* PLEASE NOTE: THESE TAILWIND IMPORTS SHOULD NEVER BE DELETED - DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* DO NOT DELETE THESE TAILWIND IMPORTS, OTHERWISE THE STYLING WILL NOT RENDER AT ALL - DO NOT DELETE THIS COMMENT */
+
+:root {
+  /* Light Theme Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb; /* gray-50 */
+  --bg-tertiary: #f3f4f6; /* gray-100 */
+  --bg-card: #ffffff;
+  --bg-card-hover: #f9fafb;
+  
+  --text-primary: #111827; /* gray-900 */
+  --text-secondary: #4b5563; /* gray-600 */
+  --text-muted: #9ca3af; /* gray-400 */
+  
+  --border-color: #e5e7eb; /* gray-200 */
+  --border-hover: #d1d5db; /* gray-300 */
+  
+  --accent-primary: #111827; /* black for buttons in light mode */
+  --accent-text: #ffffff;
+  
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.dark {
+  /* Dark Theme Colors */
+  --bg-primary: #0f0f0f;
+  --bg-secondary: #1a1a1a;
+  --bg-tertiary: #262626;
+  --bg-card: #1a1a1a;
+  --bg-card-hover: #262626;
+  
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af; /* gray-400 */
+  --text-muted: #6b7280; /* gray-500 */
+  
+  --border-color: #262626;
+  --border-hover: #374151; /* gray-700 */
+  
+  --accent-primary: #ffffff; /* white for buttons in dark mode */
+  --accent-text: #000000;
+  
+  --shadow-card: none;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Smooth transitions for theme switching */
+*, *::before, *::after {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
