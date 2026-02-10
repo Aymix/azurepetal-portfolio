@@ -1,4 +1,3 @@
-
 /* URL IMPORTS (SUCH AS FONT IMPORTS) SHOULD BE KEPT ABOVE TAILWIND IMPORTS - DO NOT DELETE THIS COMMENT */
 
 /* PLEASE NOTE: THESE TAILWIND IMPORTS SHOULD NEVER BE DELETED - DO NOT DELETE THIS COMMENT */
@@ -10,43 +9,64 @@
 :root {
   /* Light Theme Colors */
   --bg-primary: #ffffff;
-  --bg-secondary: #f9fafb; /* gray-50 */
-  --bg-tertiary: #f3f4f6; /* gray-100 */
+  --bg-secondary: #f9fafb;
+  /* gray-50 */
+  --bg-tertiary: #e0f2fe;
+  /* Sky-100 */
   --bg-card: #ffffff;
   --bg-card-hover: #f9fafb;
-  
-  --text-primary: #111827; /* gray-900 */
-  --text-secondary: #4b5563; /* gray-600 */
-  --text-muted: #9ca3af; /* gray-400 */
-  
-  --border-color: #e5e7eb; /* gray-200 */
-  --border-hover: #d1d5db; /* gray-300 */
-  
-  --accent-primary: #111827; /* black for buttons in light mode */
+
+  --text-primary: #111827;
+  /* gray-900 */
+  --text-secondary: #4b5563;
+  /* gray-600 */
+  --text-muted: #9ca3af;
+  /* gray-400 */
+
+  --border-color: #e5e7eb;
+  /* gray-200 */
+  --border-hover: #d1d5db;
+  /* gray-300 */
+
+  --accent-primary: #0284c7;
+  /* Sky-600 */
   --accent-text: #ffffff;
-  
+  --text-accent: #0369a1;
+  /* Sky-700 */
+
   --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .dark {
-  /* Dark Theme Colors */
-  --bg-primary: #0f0f0f;
-  --bg-secondary: #1a1a1a;
-  --bg-tertiary: #262626;
-  --bg-card: #1a1a1a;
-  --bg-card-hover: #262626;
-  
-  --text-primary: #ffffff;
-  --text-secondary: #9ca3af; /* gray-400 */
-  --text-muted: #6b7280; /* gray-500 */
-  
-  --border-color: #262626;
-  --border-hover: #374151; /* gray-700 */
-  
-  --accent-primary: #ffffff; /* white for buttons in dark mode */
-  --accent-text: #000000;
-  
-  --shadow-card: none;
+  /* Dark Theme Colors - Navy & Azure Palette */
+  --bg-primary: #0a0e17;
+  /* deep navy */
+  --bg-secondary: #0f172a;
+  /* slate-900 */
+  --bg-tertiary: #0c4a6e;
+  /* Sky-900 (Deep Azure Tint) */
+  --bg-card: #0f172a;
+  --bg-card-hover: #1e293b;
+
+  --text-primary: #f8fafc;
+  /* slate-50 */
+  --text-secondary: #94a3b8;
+  /* slate-400 */
+  --text-muted: #64748b;
+  /* slate-500 */
+
+  --border-color: #1e293b;
+  --border-hover: #334155;
+  /* slate-700 */
+
+  --accent-primary: #38bdf8;
+  /* Sky-400 (Vibrant Azure) */
+  --accent-text: #082f49;
+  /* deep sky-950 for contrast on light sky */
+  --text-accent: #7dd3fc;
+  /* Sky-300 (Light Azure) for text highlights */
+
+  --shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -56,7 +76,9 @@ body {
 }
 
 /* Smooth transitions for theme switching */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   transition-property: background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;

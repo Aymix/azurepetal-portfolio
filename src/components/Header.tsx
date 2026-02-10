@@ -5,30 +5,30 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
   const navLinks = [
-  {
-    name: 'Home',
-    href: '#'
-  },
-  {
-    name: 'Services',
-    href: '#services'
-  },
-  {
-    name: 'Projects',
-    href: '#works'
-  },
-  {
-    name: 'About Us',
-    href: '#about'
-  },
-  {
-    name: 'Careers',
-    href: '#careers'
-  },
-  {
-    name: 'Contact Us',
-    href: '#contact'
-  }];
+    {
+      name: 'Home',
+      href: '#'
+    },
+    {
+      name: 'Services',
+      href: '#services'
+    },
+    {
+      name: 'Projects',
+      href: '#works'
+    },
+    {
+      name: 'About Us',
+      href: '#about'
+    },
+    {
+      name: 'Careers',
+      href: '#careers'
+    },
+    {
+      name: 'Contact Us',
+      href: '#contact'
+    }];
 
   return (
     <header className="bg-[var(--bg-primary)] text-[var(--text-primary)] py-4 px-6 md:px-12 sticky top-0 z-50 border-b border-[var(--border-color)] transition-colors duration-300">
@@ -39,9 +39,9 @@ export function Header() {
             href="#"
             className="text-2xl font-bold tracking-tighter flex items-center gap-1">
 
-            <span>Digit</span>
+            <span>Azure</span>
             <span className="text-3xl bg-clip-text text-transparent bg-gradient-to-br from-[var(--text-primary)] to-gray-500">
-              X
+              Petals
             </span>
           </a>
         </div>
@@ -50,10 +50,10 @@ export function Header() {
         <div className="hidden md:flex items-center space-x-8">
           <nav className="flex items-center space-x-8">
             {navLinks.map((link) =>
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors">
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors">
 
                 {link.name}
               </a>
@@ -92,17 +92,17 @@ export function Header() {
 
       {/* Mobile Navigation */}
       {isMenuOpen &&
-      <div className="md:hidden absolute top-full left-0 w-full bg-[var(--bg-primary)] border-b border-[var(--border-color)] py-4 px-6 flex flex-col space-y-4 shadow-xl">
+        <div className="md:hidden absolute top-full left-0 w-full bg-[var(--bg-primary)] border-b border-[var(--border-color)] py-4 px-6 flex flex-col space-y-4 shadow-xl">
           {navLinks.map((link) =>
-        <a
-          key={link.name}
-          href={link.href}
-          className="text-base font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors block"
-          onClick={() => setIsMenuOpen(false)}>
+            <a
+              key={link.name}
+              href={link.href}
+              className="text-base font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors block"
+              onClick={() => setIsMenuOpen(false)}>
 
               {link.name}
             </a>
-        )}
+          )}
         </div>
       }
     </header>);

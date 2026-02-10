@@ -7,7 +7,7 @@ export function CTASection() {
         className="absolute inset-0 opacity-10"
         style={{
           backgroundImage:
-          'radial-gradient(var(--text-primary) 1px, transparent 1px)',
+            'radial-gradient(var(--text-primary) 1px, transparent 1px)',
           backgroundSize: '30px 30px'
         }}>
       </div>
@@ -15,10 +15,10 @@ export function CTASection() {
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <h2 className="text-3xl md:text-5xl font-bold mb-6">
           Ready to Transform Your <br />
-          <span className="text-[var(--text-muted)]">Digital Presence?</span>
+          <span className="text-[var(--text-accent)]">Digital Presence?</span>
         </h2>
         <p className="text-[var(--text-secondary)] mb-10 max-w-2xl mx-auto">
-          Take the first step towards digital success with DigitX by your side.
+          Take the first step towards digital success with Azure Petals by your side.
           Our team of experts is eager to craft tailored solutions that drive
           growth for your business.
         </p>
@@ -27,14 +27,14 @@ export function CTASection() {
           <button className="bg-[var(--text-primary)] text-[var(--bg-primary)] px-8 py-3 rounded-full font-bold hover:opacity-90 transition-opacity">
             Get Started
           </button>
-          <button className="bg-transparent border border-[var(--text-secondary)] text-[var(--text-primary)] px-8 py-3 rounded-full font-bold hover:bg-[var(--bg-tertiary)] transition-colors">
+          <a href="#contact" className="bg-transparent border border-[var(--text-secondary)] text-[var(--text-primary)] px-8 py-3 rounded-full font-bold hover:bg-[var(--bg-tertiary)] transition-colors inline-block">
             Free Consultation
-          </button>
+          </a>
         </div>
 
         <div className="relative h-32 md:h-48 flex items-center justify-center overflow-hidden">
           <h1 className="text-[80px] md:text-[150px] font-bold text-transparent bg-clip-text bg-gradient-to-b from-[var(--text-secondary)] to-[var(--bg-primary)] opacity-50 tracking-widest select-none">
-            DigitX
+            AZ PT
           </h1>
         </div>
       </div>

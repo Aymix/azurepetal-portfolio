@@ -1,19 +1,18 @@
-import React from 'react';
-import { Twitter, Instagram, Linkedin, Facebook } from 'lucide-react';
+import { Twitter, Instagram, Linkedin, Facebook, Mail, Phone, MapPin } from 'lucide-react';
 export function Footer() {
   return (
     <footer className="bg-[var(--bg-primary)] text-[var(--text-primary)] pt-16 pb-8 px-6 md:px-12 border-t border-[var(--border-color)] transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <a
               href="#"
               className="text-2xl font-bold tracking-tighter flex items-center gap-1 mb-6">
 
-              <span>Digit</span>
+              <span>Azure</span>
               <span className="text-3xl bg-clip-text text-transparent bg-gradient-to-br from-[var(--text-primary)] to-gray-500">
-                X
+                Petals
               </span>
             </a>
             <p className="text-[var(--text-secondary)] text-sm mb-6 max-w-xs">
@@ -100,7 +99,7 @@ export function Footer() {
             <ul className="space-y-4 text-sm text-[var(--text-secondary)]">
               <li>
                 <a
-                  href="#"
+                  href="#about"
                   className="hover:text-[var(--text-primary)] transition-colors">
 
                   About Us
@@ -119,7 +118,7 @@ export function Footer() {
                   href="#"
                   className="hover:text-[var(--text-primary)] transition-colors">
 
-                  Careers
+                  Partners
                 </a>
               </li>
               <li>
@@ -128,14 +127,6 @@ export function Footer() {
                   className="hover:text-[var(--text-primary)] transition-colors">
 
                   Testimonials
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-[var(--text-primary)] transition-colors">
-
-                  Privacy Policy
                 </a>
               </li>
             </ul>
@@ -157,7 +148,7 @@ export function Footer() {
                   href="#"
                   className="hover:text-[var(--text-primary)] transition-colors">
 
-                  Terms of Service
+                  Terms
                 </a>
               </li>
               <li>
@@ -165,31 +156,33 @@ export function Footer() {
                   href="#"
                   className="hover:text-[var(--text-primary)] transition-colors">
 
-                  Legal
+                  Privacy
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-[var(--text-primary)] transition-colors">
+            </ul>
+          </div>
 
-                  Contact Us
-                </a>
+          <div>
+            <h4 className="font-bold mb-6">Contact</h4>
+            <ul className="space-y-4 text-sm text-[var(--text-secondary)]">
+              <li className="flex items-center gap-3">
+                <MapPin size={16} className="text-[var(--text-accent)]" />
+                <span>123 Azure St, Digital Valley, CA</span>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-[var(--text-primary)] transition-colors">
-
-                  Status
-                </a>
+              <li className="flex items-center gap-3">
+                <Phone size={16} className="text-[var(--text-accent)]" />
+                <span>+1 (555) 000-0000</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail size={16} className="text-[var(--text-accent)]" />
+                <span>hello@azurepetals.com</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-[var(--border-color)] pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[var(--text-secondary)]">
-          <p>&copy; 2024 DigitX. All Rights Reserved.</p>
+          <p>&copy; 2026 Azure Petals. All Rights Reserved.</p>
           <div className="flex gap-6">
             <a
               href="#"
