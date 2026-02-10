@@ -11,8 +11,7 @@ export function HeroSection() {
             <span className="text-[var(--text-muted)]">That Drive Success</span>
           </h1>
           <p className="text-[var(--text-secondary)] text-lg md:text-xl mb-8 max-w-lg leading-relaxed">
-            At DigitX, we believe in the transformative power of digital
-            solutions. Our mission is to help businesses thrive in the digital
+            Our mission is to help businesses thrive in the digital
             age through innovation and strategy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
