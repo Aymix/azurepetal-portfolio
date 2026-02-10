@@ -7,7 +7,7 @@ export function HeroSection() {
         {/* Text Content */}
         <div className="z-10">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-            Digital <br />
+            Azure Petals <br />
             <span className="text-[var(--text-muted)]">That Drive Success</span>
           </h1>
           <p className="text-[var(--text-secondary)] text-lg md:text-xl mb-8 max-w-lg leading-relaxed">
